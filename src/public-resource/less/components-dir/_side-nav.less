@@ -1,0 +1,310 @@
+.nav-xs .nav-primary > ul > li > a {
+  position: relative;
+  padding: 0;
+  font-size: 11px;
+  text-align: center;
+  height: 50px;
+  overflow: hidden;
+  border: none;
+  color: #ffffff
+}
+.nav-xs .nav-primary > ul > li > a span {
+  display: table-cell;
+  vertical-align: middle;
+  height: 50px;
+  width: 70px;
+  padding: 0 5px;
+}
+.nav-xs .nav-primary > ul > li > a span.pull-right {
+  display: none !important;
+}
+.nav-xs .nav-primary > ul > li > a i {
+  width: auto;
+  float: none;
+  display: block;
+  font-size: 16px;
+  margin: 0;
+  line-height: 50px;
+  border: none !important;
+  -webkit-transition: margin-top 0.2s;
+  transition: margin-top 0.2s;
+}
+.nav-xs .nav-primary > ul > li > a i b {
+  left: 0 !important;
+}
+.nav-xs .nav-primary > ul > li > a .badge {
+  position: absolute;
+  right: 10px;
+  top: 4px;
+  z-index: 3;
+}
+.nav-xs .nav-primary > ul > li:hover > a i,
+.nav-xs .nav-primary > ul > li:focus > a i,
+.nav-xs .nav-primary > ul > li.active > a i {
+  margin-top: -50px;
+}
+.nav-xs .nav-primary > ul ul {
+  display: none !important;
+  position: absolute;
+  left: 100%;
+  top: 0;
+  z-index: 1050;
+  width: 220px;
+  -webkit-box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+.nav-xs .nav-primary li:hover > ul,
+.nav-xs .nav-primary li:focus > ul,
+.nav-xs .nav-primary li:active > ul {
+  display: block !important;
+}
+.nav-xs.nav-xs-right .nav-primary > ul ul {
+  left: auto;
+  right: 100%;
+}
+.nav-primary li > a > i {
+  margin: -10px -10px;
+  line-height: 38px;
+  width: 38px;
+  float: left;
+  margin-right: 5px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.nav-primary li > a > i:before {
+  position: relative;
+  z-index: 2;
+}
+.nav-primary ul.nav > li > a {
+  padding: 9px 20px;
+  position: relative;
+  -webkit-transition: background-color .2s ease-in-out 0s;
+  transition: background-color .2s ease-in-out 0s;
+}
+.no-borders .nav-primary ul.nav > li > a {
+  border-width: 0 !important;
+}
+.nav-primary ul.nav > li > a > .badge {
+  font-size: 11px;
+  padding: 2px 5px 2px 4px;
+  margin-top: 2px;
+}
+.nav-primary ul.nav > li > a > .text-muted {
+  margin: 0 3px;
+}
+.nav-primary ul.nav > li > a.active .text {
+  display: none;
+}
+.nav-primary ul.nav > li > a.active .text-active {
+  display: inline-block !important;
+}
+.nav-primary ul.nav > li li a {
+  font-weight: normal;
+  text-transform: none;
+}
+.nav-primary ul.nav > li.active > ul {
+  display: block;
+}
+.nav-primary ul.nav ul {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .app .vbox > section{
+    position: absolute;
+  }
+  .bg-primary {
+    background-color: #545ca6;
+    color: #dadcec;
+  }
+  .text-success {
+    color: #1ab667;
+  }
+  .padder {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .padder-lg {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .m-t {
+    margin-top: 15px;
+  }
+  .m-b {
+    margin-bottom: 15px;
+  }
+  .m-b-sm {
+    margin-bottom: 10px;
+  }
+  .text-xs {
+    font-size: 12px;
+  }
+  .font-bold {
+    font-weight: 700;
+    color: #ffffff
+  }
+  .aside{
+    width: 200px;
+  }
+  .nav-xs{
+    width: 70px;
+  }
+  .scrollable {
+      -webkit-overflow-scrolling: touch;
+      overflow-x: hidden;
+      overflow-y: auto;
+  }
+  .nav-xs .slim-scroll {
+      overflow: visible !important;
+  }
+  .nav-xs .scrollable {
+    overflow: visible;
+  }
+  .nav-xs .hidden-nav-xs {
+      display: none;
+  }
+
+  .vbox {
+      display: table;
+      border-spacing: 0;
+      position: relative;
+      height: 100%;
+      width: 100%;
+  }
+  .vbox > section,
+  .vbox > footer {
+    // top: 0;
+    bottom: 0;
+    width: 100%;
+    position: fixed;
+  }
+  .vbox > section.w-f-md {
+    bottom: 60px;
+  }
+  // .vbox > footer {
+  //   top: auto;
+  //   z-index: 1000;
+  // }
+  .hbox {
+    display: table;
+    table-layout: fixed;
+    border-spacing: 0;
+    width: 100%;
+  }
+}
+//字体颜色
+.text-info {
+  color: #4cb6cb;
+}
+.text-primary-lter {
+  color: #747bb9;
+}
+.text-primary-dker {
+  color: #434984;
+}
+
+.hbox > aside,
+.hbox > section {
+  display: table-cell;
+  vertical-align: top;
+  height: 400px;
+  float: none;
+}
+.hbox > aside.show,
+.hbox > aside.hidden-sm,
+.hbox > section.show,
+.hbox > section.hidden-sm {
+  display: table-cell !important;
+}
+
+//背景颜色
+.bg-black {
+  background-color: #232c32;
+  color: #7d94a4;
+}
+.bg-black.lt,
+.bg-black .lt {
+  background-color: #2f3940;
+}
+.bg-black.lter,
+.bg-black .lter {
+  background-color: #3b464d;
+}
+.bg-black.dk,
+.bg-black .dk {
+  background-color: #181f24;
+}
+.bg-black.dker,
+.bg-black .dker {
+  background-color: #0d1215;
+}
+.bg-black.bg,
+.bg-black .bg {
+  background-color: #232c32;
+}
+.bg-black a {
+  color: #9badb9;
+}
+.bg-black a:hover {
+  color: #fff;
+}
+.bg-black a.list-group-item:hover,
+.bg-black a.list-group-item:focus {
+  background-color: inherit;
+}
+.bg-black .nav > li:hover > a,
+.bg-black .nav > li:focus > a,
+.bg-black .nav > li:active > a,
+.bg-black .nav > li.active > a {
+  color: #fff;
+  background-color: #2c3942;
+}
+.bg-black .nav > li > a {
+  color: #8ca1af;
+}
+.bg-black .nav > li > a:hover,
+.bg-black .nav > li > a:focus {
+  background-color: #2c3942;
+}
+.bg-black .nav .open > a {
+  background-color: #2c3942;
+}
+.bg-black .caret {
+  border-top-color: #7d94a4;
+  border-bottom-color: #7d94a4;
+}
+.bg-black.navbar .nav > li.active > a {
+  color: #fff;
+  background-color: #181f24;
+}
+.bg-black .open > a,
+.bg-black .open > a:hover,
+.bg-black .open > a:focus {
+  color: #fff;
+}
+.bg-black .text-muted {
+  color: #627b8c !important;
+}
+.bg-black .text-lt {
+  color: #c8d2d9 !important;
+}
+.bg-black .icon-muted {
+  color: #627b8c !important;
+}
+.bg-black.auto .list-group-item,
+.bg-black .auto .list-group-item {
+  border-color: #191f23 !important;
+  background-color: transparent;
+}
+.bg-black.auto .list-group-item:hover,
+.bg-black.auto .list-group-item:focus,
+.bg-black.auto .list-group-item:active,
+.bg-black.auto .list-group-item.active,
+.bg-black .auto .list-group-item:hover,
+.bg-black .auto .list-group-item:focus,
+.bg-black .auto .list-group-item:active,
+.bg-black .auto .list-group-item.active {
+  background-color: #181f24 !important;
+}

@@ -1,0 +1,267 @@
+@media (min-width: 768px) {
+  .header{
+    min-height: 50px;
+    // padding: 0 15px;
+  }
+  .header-md{
+    min-height: 60px;
+  }
+  .navbar-header{
+    position: relative;
+    text-align: center;
+  }
+  .navbar-brand {
+    float: none;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    height: auto;
+    line-height: 50px;
+    display: inline-block;
+    padding: 0 20px;
+  }
+  .header-md .navbar-brand{
+    line-height: 60px;
+  }
+  .header-md .navbar-nav > li > a{
+    padding: 20px;
+  }
+  .vbox > header.header-md ~ section {
+      top: 60px;
+  }
+  .nav-xs {
+      width: 70px;
+  }
+
+  .nav-xs .hidden-nav-xs {
+      display: none;
+  }
+  .nav-xs .visible-nav-xs {
+    display: inherit;
+  }
+  .nav-off-screen {
+      display: block !important;
+      position: absolute;
+      left: 0;
+      top: 0px;
+      bottom: 0;
+      width: 75%;
+      visibility: visible;
+      overflow-x: hidden;
+      overflow-y: auto;
+      -webkit-overflow-scrolling: touch;
+  }
+  .thumb-sm {
+    width: 40px;
+    display: inline-block;
+  }
+}
+//背景颜色
+.bg-white-only{
+  background: #fff;
+}
+.bg-info {
+  background-color: #4cb6cb;
+  color: #eaf6f9;
+}
+.bg-info .text-lt {
+  color: #ffffff !important;
+}
+.text_logo{
+  color:#ffffff
+}
+.btn-link {
+  color: #788188;
+}
+.btn {
+  font-weight: 500;
+  border-radius: 2px;
+}
+.btn-icon {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  width: 34px;
+  text-align: center;
+}
+.bg-white {
+  background-color: #fff;
+  color: #788188;
+}
+
+//margin&padding
+.m-l-sm {
+  margin-left: 10px;
+}
+.input-s-lg {
+  width: 250px;
+}
+
+//active
+.active > .text-active,
+.active > .auto .text-active {
+  display: inline-block !important;
+}
+.text-active,
+.active > .text,
+.active > .auto .text {
+  display: none !important;
+}
+
+.rounded {
+  border-radius: 500px;
+}
+
+//badge
+.badge,
+.label {
+  font-weight: bold;
+}
+.badge {
+  background-color: #aac4c8;
+}
+.badge.up {
+  position: relative;
+  top: -10px;
+  padding: 3px 6px;
+  margin-left: -10px;
+}
+.badge-sm {
+  font-size: 85%;
+  padding: 2px 5px !important;
+}
+
+//list-group
+.list-group {
+  border-radius: 2px;
+}
+.list-group.no-radius .list-group-item {
+  border-radius: 0 !important;
+}
+.list-group.no-borders .list-group-item {
+  border: none;
+}
+.list-group.no-border .list-group-item {
+  border-width: 1px 0;
+}
+.list-group.no-bg .list-group-item {
+  background-color: transparent;
+}
+.list-group-item {
+  border-color: #eaeef1;
+  padding-right: 15px;
+}
+a.list-group-item:hover,
+a.list-group-item:focus {
+  background-color: #eef3f4;
+}
+.list-group-item.media {
+  margin-top: 0;
+}
+.list-group-item.active {
+  color: #fff;
+  border-color: #4cb6cb !important;
+  background-color: #4cb6cb !important;
+}
+.list-group-item.active .text-muted {
+  color: #c3e6ed;
+}
+.list-group-item.active a {
+  color: #fff;
+}
+.list-group-alt .list-group-item:nth-child(2n+2) {
+  background-color: rgba(0,0,0,0.02) !important;
+}
+.list-group-lg .list-group-item {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.list-group-sp .list-group-item {
+  margin-bottom: 5px;
+  border-radius: 3px;
+}
+.list-group-item > .badge {
+  margin-right: 0;
+}
+.list-group-item > .fa-chevron-right {
+  float: right;
+  margin-top: 4px;
+  margin-right: -5px;
+}
+.list-group-item > .fa-chevron-right + .badge {
+  margin-right: 5px;
+}
+
+//panel
+.panel {
+  border-radius: 2px;
+}
+.panel.panel-default {
+  border-color: #eaeef1;
+}
+.panel.panel-default > .panel-heading,
+.panel.panel-default > .panel-footer {
+  border-color: #eaeef1;
+}
+.panel .list-group-item {
+  border-color: #f3f5f7;
+}
+.panel.no-borders {
+  border-width: 0;
+}
+.panel.no-borders .panel-heading,
+.panel.no-borders .panel-footer {
+  border-width: 0;
+}
+.panel .table td,
+.panel .table th {
+  padding: 8px 15px;
+  border-top: 1px solid #eaeef1;
+}
+.panel .table thead > tr > th {
+  border-bottom: 1px solid #eaeef1;
+}
+.panel .table-striped > tbody > tr:nth-child(odd) > td,
+.panel .table-striped > tbody > tr:nth-child(odd) > th {
+  background-color: #f7fafa;
+}
+.panel .table-striped > thead th {
+  background-color: #f7fafa;
+  border-right: 1px solid #eaeef1;
+}
+.panel .table-striped > thead th:last-child {
+  border-right: none;
+}
+.panel-heading {
+  border-radius: 2px 2px 0 0;
+}
+.panel-default .panel-heading {
+  background-color: #f7fafa;
+}
+.panel-heading.no-border {
+  margin: -1px -1px 0 -1px;
+  border: none;
+}
+.panel-heading .nav {
+  margin: -10px -15px;
+}
+.panel-heading .nav-tabs {
+  margin: -11px -16px;
+}
+.panel-heading .nav-tabs.nav-justified {
+  width: auto;
+}
+.panel-heading .nav-tabs > li > a {
+  margin: 0;
+  padding-top: 9px;
+}
+.panel-heading .list-group {
+  background: transparent;
+}
+.panel-footer {
+  border-color: #eaeef1;
+  border-radius: 0 0 2px 2px;
+  background-color: #f7fafa;
+}
+.panel-group .panel-heading + .panel-collapse .panel-body {
+  border-top: 1px solid #eaedef;
+}
